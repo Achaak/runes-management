@@ -1,4 +1,4 @@
-import * as user from './user'
+import * as rune from './rune'
 import type { IContext } from 'overmind'
 import {
   createStateHook,
@@ -9,7 +9,7 @@ import {
 import { namespaced } from 'overmind/config'
 
 export const config = namespaced({
-  user,
+  rune,
 })
 
 export type Context = IContext<typeof config>
