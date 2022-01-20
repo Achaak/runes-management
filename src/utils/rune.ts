@@ -1,6 +1,6 @@
 import type { SetLabel, StatLabel } from '@/types/common'
 import type { StatId, SetId } from '@/types/rune'
-import type { SetUtility } from '@/types/setUtility'
+import type { RuneUtility } from '@/types/runeUtility'
 
 export const Stat: Record<StatLabel, StatId> = {
   hp_flat: 1,
@@ -151,7 +151,7 @@ export const getUtilities = ({
   primaryStat: StatId
   secondaryStat: StatId
   innerStat: StatId
-}): SetUtility[] => {
+}): RuneUtility[] => {
   console.log(innerStat, primaryStat, secondaryStat, set)
   return []
 }

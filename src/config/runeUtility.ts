@@ -1,11 +1,10 @@
-import type { StatUtility } from '@/types/statUtility'
-import { Stat } from '@/utils/rune'
+import type { RuneUtility } from '@/types/runeUtility'
+import { Set, Stat } from '@/utils/rune'
 
-type StatUtilityKey = 'speed nuker'
-
-export const StatsUtilities: Record<StatUtilityKey, StatUtility> = {
-  'speed nuker': {
+export const StatsUtilities: RuneUtility[] = [
+  {
     id: 'speed_nuker',
+    sets: [Set.blade, Set.rage, Set.fatal, Set.violent, Set.fight, Set.will],
     primary: {
       2: {
         hight_value: [Stat.atk_percent, Stat.spd],
@@ -23,4 +22,4 @@ export const StatsUtilities: Record<StatUtilityKey, StatUtility> = {
       medium_value: [Stat.atk_flat],
     },
   },
-}
+]

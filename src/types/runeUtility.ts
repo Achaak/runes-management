@@ -1,7 +1,8 @@
-import type { StatId } from './rune'
+import type { SetId, StatId } from './rune'
 
-export interface StatUtility {
+export interface RuneUtility {
   id: string
+  sets?: SetId[]
   primary?: {
     2?: {
       hight_value?: StatId[]
